@@ -71,7 +71,7 @@ app.get('/', (req, res) => {
   res.redirect('/inicio');
 });
 app.get('/inicio', (req, res) => {
-  res.sendFile(__dirname + '/public/inicio.html');
+  res.sendFile(path.join(__dirname, 'public', 'inicio.html'));
   //res.redirect();
 });
 app.get('/buscarLojas', (req, res) => {
