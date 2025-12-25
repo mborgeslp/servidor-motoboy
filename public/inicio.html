@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="css/inicio.css">
+  <title>Inicio</title>
+</head>
+<body>
+  <div class="container">
+    <div id="listBairros" class="areaListaBairros"> 
+      <ul>
+        <li class="itenList">
+          <div><p>Rio Branco</p></div>
+          <div><span>R$ 5,00</span></div>
+          <div><button>+</button></div>
+        </li>
+        <li class="itenList">
+          <div><p>Jardim Maluche</p></div>
+          <div><span>R$ 7,00</span></div>
+          <div><button>+</button></div>
+        </li>
+      </ul>
+      <div class="footerListBairros">
+        <button class="buttonFecharList">X</button>
+      </div>
+    </div>
+    <div class="header">
+      <div class="hdr2">
+
+        <div>
+        </div>
+
+        <div class="areaRestaurante">
+          <select name="" id="selectLoja">
+            <option value="" disabled selected hidden>Selecione uma loja</option>
+
+          </select>
+        </div>
+
+        <div>
+          <div class="buttonChange">
+            <i class="bi bi-arrow-repeat"></i>
+            <span>Mudar</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="main">
+      <div class="areaAddtaxa">
+          <button class="buttonAdd">ADICIONAR TAXA</button>
+      </div>
+
+      <ul class="areaList">
+      </ul>
+      <div class="areaBtnLimpar hiddenLimpar">
+        <button class="btnLimpar btndEditores">Limpar taxas</button>
+        
+      </div>
+
+      <div class="footer-main">
+        <div class="resumo">
+
+          <div class="resumo-item">
+            <p>Chegada:</p>
+            <span id="vlChegada">R$ 0,00</span>
+          </div>
+          <div class="resumo-item">
+            <p>Taxas:</p>
+            <span id="vlTaxas">R$ 0,00</span>
+          </div>
+          <div class="resumo-item">
+            <p>Entregas:</p>
+            <span class="qtdEntregas">0</span>
+          </div>
+        </div>
+
+        <div class="resumo">
+
+
+          <div class="resumo-item resumo-total">
+            <p>Saldo do dia</p>
+            <span id="totalTx">R$ 0,00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+
+      <div></div>
+      <div class="f-last-div">
+
+
+        <div class="f-buttons">
+          <div class="areaNavB">
+            <div class="navButton">
+              <i class="bi bi-house"></i>
+              <span class="subText">Início</span>
+            </div>
+            <div class="navButton">
+              <i class="bi bi-journal-text"></i>
+              <span class="subText">Extrato</span>
+            </div>
+            <div class="navButton">
+              <i class="bi bi-geo-alt"></i>
+              <span class="subText">Mapa</span>
+            </div>
+            <div class="navButton">
+              <!--<i class="bi bi-list"></i>-->
+              <div class="NavbtnHumb">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="subText">Mais</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <script src="js/inicio.js"></script>
+</body>
+</html>

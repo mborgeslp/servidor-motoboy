@@ -1,0 +1,399 @@
+*::-webkit-scrollbar {
+  width: 6px;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(48 0 79 / 20%);
+  border-radius: 3px;
+
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body,
+div,
+figure,
+img,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+label,
+option,
+select,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: normal 14px "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: rgba(70 70 70 / 80%);
+  box-sizing: border-box;
+}
+
+.bi {
+  font-size: 16pt;
+}
+
+
+@media screen and (max-width: 480px) {
+  .container {
+
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10vh 65vh 25vh;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .header {
+    /*display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr;*/
+    z-index: 99;
+    display: flex;
+  }
+
+  .main {
+    overflow-y: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hdr2 {
+    background-color: #f2f4f7;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 1fr;
+    /*
+    display: flex;
+    gap: 1rem;*/
+    align-items: center;
+    z-index: 99;
+    width: 100%;
+  }
+
+  .hdr2 div:nth-child(1),
+  .hdr2 div:nth-child(3) {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hdr2 div:nth-child(3) span {
+    font-size: 12px;
+
+  }
+
+  .hdr2 div:nth-child(3) i {
+    line-height: 10px;
+  }
+
+  .btnHumb {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 25px;
+    justify-content: space-around;
+  }
+
+  .btnHumb span {
+    display: flex;
+    height: 3px;
+    width: 100%;
+    background-color: rgba(48 48 48);
+  }
+
+  .areaRestaurante {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .areaRestaurante select {
+    background-color: white;
+    width: 100%;
+    border-radius: 25px;
+    padding: .5rem;
+    box-shadow: 0 0 1px 1px rgba(70 70 70 / 20%);
+  }
+
+  .areaBtnLimpar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: .5rem 0 auto;
+
+  }
+
+  .hiddenLimpar {
+    display: none;
+  }
+
+  .btndEditores {
+    background-color: #30004f;
+    height: 38px;
+    padding: 0 1rem;
+    color: white;
+    border-radius: 25px;
+  }
+
+  .areaAddtaxa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: 1rem;*/
+  }
+
+  .buttonAdd {
+    padding: .5rem 1rem;
+    background-color: #30004f;
+    color: white;
+    border-radius: 25px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+  }
+
+  .footer .f-last-div {
+    display: flex;
+    background-color: #f2f4f7;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .f-buttons {
+    padding: .3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .f-buttons .areaNavB {
+    background-color: rgba(48 0 79);
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    /*
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+    font-size: 16px;
+    color: white;
+  }
+
+  .navButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navButton .subText {
+    color: white;
+    font-size: 12px;
+  }
+
+  .NavbtnHumb {
+    width: 21px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .NavbtnHumb span {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+
+  .f-buttons .bi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+    color: white;
+  }
+
+  .areaListaBairros {
+    background-color: rgba(48 0 79);
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    top: -38vh;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 98;
+    padding: 1.5rem 1rem 1rem;
+    transition: top .3s ease;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+  }
+
+  .areaListaShow {
+    top: 8vh
+  }
+
+  .footerListBairros {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .footerListBairros .buttonFecharList {
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    padding: .5rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .itenList {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 60% 25% 15%;
+    grid-template-rows: 30px;
+    align-items: center;
+
+  }
+
+  .itenList div p,
+  .itenList div span {
+    color: white;
+    font-size: 16px;
+  }
+
+  .itenList div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .itenList div:first-child,
+  .itenList div:nth-child(2) {
+    border-bottom: .5px solid white;
+  }
+
+  .itenList div button {
+    width: 100%;
+    height: 100%;
+  }
+
+  .areaList {
+    padding: 1rem;
+    overflow-y: auto;
+  }
+
+  .areaList li {
+
+    display: grid;
+    grid-template-columns: 20px auto auto;
+    grid-template-rows: 1fr;
+    height: 40px;
+    border-bottom: .5px solid rgb(48 0 79);
+    box-sizing: border-box;
+  }
+
+  .areaList li div {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .areaList li div:nth-child(1) {
+    justify-content: center;
+  }
+
+  .areaList li div:nth-child(2) {
+    padding-left: .5rem;
+  }
+
+  .areaList li div:nth-child(3) {
+    justify-content: flex-end;
+  }
+
+  .areaList p,
+  .areaList span {
+    font-size: 16px;
+  }
+
+  .footer-main {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+  }
+
+  .footer-main .resumo {
+    background-color: #30004f;
+    width: 48%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem;
+  }
+
+  .footer-main .resumo .resumo-item {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-main .resumo .resumo-total {
+
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  #totalTx {
+    font-size: 20px;
+  }
+
+  .footer-main p,
+  .footer-main span {
+    color: white;
+  }
+
+}
