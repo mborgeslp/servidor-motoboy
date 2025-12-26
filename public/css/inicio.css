@@ -139,9 +139,16 @@ input {
   .areaBtnLimpar {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-around;
     margin: .5rem 0 auto;
 
+  }
+
+  .areaBtnLimpar .alertLimpar {
+    margin: .5rem 0;
+    color: red;
+    font-weight: bold;
   }
 
   .hiddenLimpar {
@@ -275,7 +282,7 @@ input {
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 1rem;
-    box-shadow: 0 -1px 9px 2px rgba(37, 35, 39, 0.77);
+
   }
 
   .footerListBairros .buttonFecharList {

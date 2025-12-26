@@ -197,14 +197,23 @@ btnLimpar.addEventListener('click', (e) => {
 })
 
 function limparTaxas(button) {
-
+  const areaBtnLimpar = document.querySelector('.areaBtnLimpar');
   let selecionados;
   let inputs
   if (button === 'Limpar') {
     inputs = areaList.querySelectorAll('input[type="checkbox"]:checked')
     const verific = areaList.querySelector('input:checked');
+    const alertLimpar = areaBtnLimpar.querySelector('span');
+
     if (!verific) {
-      alert('Selecione pelo menos uma taxa!');
+
+      alertLimpar.classList.add('alertLimpar')
+      alertLimpar.textContent = 'Selecione pelo menos uma taxa!'
+    }
+
+    if (verific) {
+      alertLimpar.classList.remove('alertLimpar')
+      alertLimpar.textContent = ''
     }
   }
   if (button === 'Mudar') {
@@ -217,8 +226,7 @@ function limparTaxas(button) {
   });
 
   if (!document.querySelector('.itemBairro')) {
-
-    document.querySelector('.areaBtnLimpar').classList.add('hiddenLimpar');
+    areaBtnLimpar.classList.add('hiddenLimpar');
   }
   atualizarTotal()
 }
