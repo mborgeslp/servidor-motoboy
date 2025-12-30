@@ -8,7 +8,7 @@ const dados = [
   {
     id: 0,
     restaurante: 'Djapa Sushi',
-    chegada: 50.00,
+    chegada: 40.00,
     bairros: [
       { id: 0, bairro: 'Rio Branco', taxa: 5 },
       { id: 1, bairro: 'Jardim Maluche', taxa: 7 },
@@ -50,44 +50,8 @@ const dados = [
       { id: 37, bairro: 'Lageado Baixo', taxa: 25 },
       { id: 38, bairro: 'Volta Grande', taxa: 25 }
     ]
-  },
-  {
-    id: 1,
-    restaurante: 'Diminas Hamburgueria',
-    chegada: 40.00,
-    bairros: [
-      { id: 1, bairro: 'Centro', taxa: 10 },
-      { id: 2, bairro: 'Steffen', taxa: 15 }
-    ]
-  },
-  {
-    id: 2,
-    restaurante: 'Dom Mazene',
-    chegada: 40.00,
-    bairros: [
-      { id: 1, bairro: 'Centro', taxa: 10 },
-      { id: 2, bairro: 'Steffen', taxa: 15 }
-    ]
-  },
-  {
-    id: 3,
-    restaurante: 'Mc Donalds',
-    chegada: 40.00,
-    bairros: [
-      { id: 1, bairro: 'Centro', taxa: 10 },
-      { id: 2, bairro: 'Steffen', taxa: 15 }
-    ]
   }
-  ,
-  {
-    id: 4,
-    restaurante: 'Burguer King',
-    chegada: 40.00,
-    bairros: [
-      { id: 1, bairro: 'Centro', taxa: 10 },
-      { id: 2, bairro: 'Steffen', taxa: 15 }
-    ]
-  }
+
 ]
 app.use((req, res, next) => {//LEMBRAR DE TIRAR ESSE TRECHO MAIS TARDE, É APENAS PARA PERMITIR A APPWEB
   res.header('Access-Control-Allow-Origin', '*');
