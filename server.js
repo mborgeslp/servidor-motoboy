@@ -8,7 +8,7 @@ const dados = [
   {
     id: 0,
     restaurante: 'Djapa Sushi',
-    chegada: 40.00,
+    chegada: 50.00,
     bairros: [
       { id: 0, bairro: 'Rio Branco', taxa: 5 },
       { id: 1, bairro: 'Jardim Maluche', taxa: 7 },
@@ -49,6 +49,14 @@ const dados = [
       { id: 36, bairro: 'Lorena', taxa: 25 },
       { id: 37, bairro: 'Lageado Baixo', taxa: 25 },
       { id: 38, bairro: 'Volta Grande', taxa: 25 }
+    ]
+  },
+  {
+    id: 1,
+    restaurante: 'Boteco do Bolinho',
+    chegada: 50.00,
+    bairros: [
+      { id: 0, bairro: 'Rio Branco', taxa: 0 },
     ]
   }
 
