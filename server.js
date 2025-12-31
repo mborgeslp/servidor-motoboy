@@ -87,4 +87,6 @@ app.get('/buscarLojas', (req, res) => {
   }
   res.status(200).json(dados);
 });
-app.listen(port)
+app.listen(port, () => {
+  console.log(`Servidor rodando em localhost: ${port}`);
+})
